@@ -1,0 +1,25 @@
+import streamlit as st
+import pandas as pd
+import numpy as np
+import joblib
+import re
+import string
+import nltk
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
+from nltk.stem import WordNetLemmatizer
+from sklearn.feature_extraction.text import TfidfVectorizer
+import seaborn as sns
+import matplotlib.pyplot as plt
+from string import punctuation
+from nltk.stem import WordNetLemmatizer, PorterStemmer
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
+from nltk.util import ngrams
+from wordcloud import WordCloud
+import itertools
+from sklearn import metrics
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score, precision_score, recall_score
+from textblob import TextBlob
+from xgboost import XGBClassifier
