@@ -11,8 +11,10 @@ from nltk.stem import WordNetLemmatizer
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 # Load the model and other necessary files
-model = joblib.load(r"xgrab.pkl")
-vectorizer = joblib.load(r"termf.pkl")
+with open("xgrab.pkl", "rb") as f:
+    model = pickle.load(f)
+with open("termf.pkl", "rb") as f:
+    vectorizer = pickle.load(f)
 stop_words = stopwords.words('english')
 lemmatizer = WordNetLemmatizer()
 
